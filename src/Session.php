@@ -28,10 +28,10 @@ class Session
     /**
      * Initializes session.
      *
-     * @param DriverInterface  $driver
-     * @param SelectorsHandler $selectorsHandler
+     * @param DriverInterface       $driver
+     * @param SelectorsHandler|null $selectorsHandler
      */
-    public function __construct(DriverInterface $driver, SelectorsHandler $selectorsHandler = null)
+    public function __construct(DriverInterface $driver, ?SelectorsHandler $selectorsHandler = null)
     {
         $driver->setSession($this);
 
